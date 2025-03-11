@@ -1,4 +1,4 @@
-package project;
+package project.functionalInterface;
 
 import java.util.function.Predicate;
 

@@ -39,13 +39,13 @@ public class Main {
                 .filter(person -> FEMALE.equals(person.getGender()))
                 .toList();
 
-//Function takes 1 argument and produces 1 result
+   //Function takes 1 argument and produces 1 result
         int increment2 = incrementByOneFunction.apply(10);
         System.out.println(increment2);
         Function<Integer, Integer> incrementByOneThenMultiplyBy10 = incrementByOneFunction.andThen(multiplyBy10Function);
         System.out.println(incrementByOneThenMultiplyBy10.apply(1));
 
-//BiFunction takes two argument and produces 1 result
+   //BiFunction takes two argument and produces 1 result
         System.out.println(incrementByOneAndMultiplyBiFunction.apply(1, 10));
     }
 
